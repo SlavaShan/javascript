@@ -127,46 +127,46 @@
 
 ## Objects
 
-  - [3.1](#3.1) <a name='3.1'></a> Use the literal syntax for object creation. eslint: [`no-new-object`](http://eslint.org/docs/rules/no-new-object.html)
+  - [3.1](#3.1) <a name='3.1'></a> Используйте фигурные скобки для создания объекта. eslint: [`no-new-object`](http://eslint.org/docs/rules/no-new-object.html)
 
     ```javascript
-    // bad
+    // плохо
     const item = new Object();
 
-    // good
+    // хорошо
     const item = {};
     ```
 
   - [3.2](#3.2) <a name='3.2'></a> If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code. jscs: [`disallowIdentifierNames`](http://jscs.info/rule/disallowIdentifierNames)
 
     ```javascript
-    // bad
+    // плохо
     const superman = {
       default: { clark: 'kent' },
       private: true,
     };
 
-    // good
+    // хорошо
     const superman = {
       defaults: { clark: 'kent' },
       hidden: true,
     };
     ```
 
-  - [3.3](#3.3) <a name='3.3'></a> Use readable synonyms in place of reserved words. jscs: [`disallowIdentifierNames`](http://jscs.info/rule/disallowIdentifierNames)
+  - [3.3](#3.3) <a name='3.3'></a> Используйте читаемые синонимы вместо ключевых слов. jscs: [`disallowIdentifierNames`](http://jscs.info/rule/disallowIdentifierNames)
 
     ```javascript
-    // bad
+    // плохо
     const superman = {
       class: 'alien',
     };
 
-    // bad
+    // плохо
     const superman = {
       klass: 'alien',
     };
 
-    // good
+    // хорошо
     const superman = {
       type: 'alien',
     };
@@ -183,14 +183,14 @@
       return `a key named ${k}`;
     }
 
-    // bad
+    // плохо
     const obj = {
       id: 5,
       name: 'San Francisco',
     };
     obj[getKey('enabled')] = true;
 
-    // good
+    // хорошо
     const obj = {
       id: 5,
       name: 'San Francisco',
@@ -202,7 +202,7 @@
   - [3.5](#3.5) <a name='3.5'></a> Use object method shorthand. eslint: [`object-shorthand`](http://eslint.org/docs/rules/object-shorthand.html) jscs: [`requireEnhancedObjectLiterals`](http://jscs.info/rule/requireEnhancedObjectLiterals)
 
     ```javascript
-    // bad
+    // плохо
     const atom = {
       value: 1,
 
@@ -211,7 +211,7 @@
       },
     };
 
-    // good
+    // хорошо
     const atom = {
       value: 1,
 
@@ -229,12 +229,12 @@
     ```javascript
     const lukeSkywalker = 'Luke Skywalker';
 
-    // bad
+    // плохо
     const obj = {
       lukeSkywalker: lukeSkywalker,
     };
 
-    // good
+    // хорошо
     const obj = {
       lukeSkywalker,
     };
@@ -248,7 +248,7 @@
     const anakinSkywalker = 'Anakin Skywalker';
     const lukeSkywalker = 'Luke Skywalker';
 
-    // bad
+    // плохо
     const obj = {
       episodeOne: 1,
       twoJediWalkIntoACantina: 2,
@@ -258,7 +258,7 @@
       anakinSkywalker,
     };
 
-    // good
+    // хорошо
     const obj = {
       lukeSkywalker,
       anakinSkywalker,
@@ -274,14 +274,14 @@
   > Why? In general we consider it subjectively easier to read. It improves syntax highlighting, and is also more easily optimized by many JS engines.
 
   ```javascript
-  // bad
+  // плохо
   const bad = {
     'foo': 3,
     'bar': 4,
     'data-blah': 5,
   };
 
-  // good
+  // хорошо
   const good = {
     foo: 3,
     bar: 4,
