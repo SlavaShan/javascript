@@ -457,13 +457,13 @@
 
 ## Строки
 
-  - [6.1](#6.1) <a name='6.1'></a> Use single quotes `''` for strings. eslint: [`quotes`](http://eslint.org/docs/rules/quotes.html) jscs: [`validateQuoteMarks`](http://jscs.info/rule/validateQuoteMarks)
+  - [6.1](#6.1) <a name='6.1'></a> Используйте одинарные кавычки `''` для строк. eslint: [`quotes`](http://eslint.org/docs/rules/quotes.html) jscs: [`validateQuoteMarks`](http://jscs.info/rule/validateQuoteMarks)
 
     ```javascript
-    // bad
+    // плохо
     const name = "Capt. Janeway";
 
-    // good
+    // хорошо
     const name = 'Capt. Janeway';
     ```
 
