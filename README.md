@@ -16,7 +16,7 @@
   1. [Constructors](#constructors)
   1. [Modules](#modules)
   1. [Iterators and Generators](#iterators-and-generators)
-  1. [Properties](#properties)
+  1. [Свойства](#Свойства)
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
@@ -1055,7 +1055,7 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Properties
+## Свойства
 
   - [12.1](#12.1) <a name='12.1'></a> Use dot notation when accessing properties. eslint: [`dot-notation`](http://eslint.org/docs/rules/dot-notation.html) jscs: [`requireDotNotation`](http://jscs.info/rule/requireDotNotation)
 
