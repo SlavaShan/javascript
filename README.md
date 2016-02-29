@@ -390,12 +390,12 @@
 
 ## Destructuring
 
-  - [5.1](#5.1) <a name='5.1'></a> Use object destructuring when accessing and using multiple properties of an object. jscs: [`requireObjectDestructuring`](http://jscs.info/rule/requireObjectDestructuring)
+  - [5.1](#5.1) <a name='5.1'></a> Используйте деструктуризацию объекта, когда обращаетесь и используете несколько свойств объекта. jscs: [`requireObjectDestructuring`](http://jscs.info/rule/requireObjectDestructuring)
 
-    > Why? Destructuring saves you from creating temporary references for those properties.
+    > Почему? Деструктуризация спасает от вас от создания временных ссылок на эти свойства.
 
     ```javascript
-    // bad
+    // плохо
     function getFullName(user) {
       const firstName = user.firstName;
       const lastName = user.lastName;
@@ -403,52 +403,52 @@
       return `${firstName} ${lastName}`;
     }
 
-    // good
+    // хорошо
     function getFullName(user) {
       const { firstName, lastName } = user;
       return `${firstName} ${lastName}`;
     }
 
-    // best
+    // лучше
     function getFullName({ firstName, lastName }) {
       return `${firstName} ${lastName}`;
     }
     ```
 
-  - [5.2](#5.2) <a name='5.2'></a> Use array destructuring. jscs: [`requireArrayDestructuring`](http://jscs.info/rule/requireArrayDestructuring)
+  - [5.2](#5.2) <a name='5.2'></a> Используйте деструктуризацию массива. jscs: [`requireArrayDestructuring`](http://jscs.info/rule/requireArrayDestructuring)
 
     ```javascript
     const arr = [1, 2, 3, 4];
 
-    // bad
+    // плохо
     const first = arr[0];
     const second = arr[1];
 
-    // good
+    // хорошо
     const [first, second] = arr;
     ```
 
-  - [5.3](#5.3) <a name='5.3'></a> Use object destructuring for multiple return values, not array destructuring.
+  - [5.3](#5.3) <a name='5.3'></a> Используйте деструктуризацию объекта для возврата нескольких значений, но не деструктуризацию массива.
 
-    > Why? You can add new properties over time or change the order of things without breaking call sites.
+    > Почему? Вы можете добавлять новые свойства в будущем или изменять их порядок, не ломая положения вызовов.
 
     ```javascript
-    // bad
+    // плохо
     function processInput(input) {
-      // then a miracle occurs
+      // потом происходит чудо
       return [left, right, top, bottom];
     }
 
-    // the caller needs to think about the order of return data
+    // вызывающему нужно думать о порядке возвращаемых данных
     const [left, __, top] = processInput(input);
 
-    // good
+    // хорошо
     function processInput(input) {
-      // then a miracle occurs
+      // потом происходит чудо
       return { left, right, top, bottom };
     }
 
-    // the caller selects only the data they need
+    // вызывающий выбирает только те данные, которые нужны
     const { left, right } = processInput(input);
     ```
 
