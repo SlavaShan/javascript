@@ -10,7 +10,7 @@
   1. [Objects](#objects)
   1. [Arrays](#arrays)
   1. [Destructuring](#destructuring)
-  1. [Strings](#strings)
+  1. [Строки](#Строки)
   1. [Functions](#functions)
   1. [Arrow Functions](#arrow-functions)
   1. [Constructors](#constructors)
@@ -455,7 +455,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## Strings
+## Строки
 
   - [6.1](#6.1) <a name='6.1'></a> Use single quotes `''` for strings. eslint: [`quotes`](http://eslint.org/docs/rules/quotes.html) jscs: [`validateQuoteMarks`](http://jscs.info/rule/validateQuoteMarks)
 
