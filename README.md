@@ -1072,7 +1072,7 @@
     const isJedi = luke.jedi;
     ```
 
-  - [12.2](#12.2) <a name='12.2'></a> Use subscript notation `[]` when accessing properties with a variable.
+  - [12.2](#12.2) <a name='12.2'></a>Используйте нотацию с [], когда получаете свойство, имя которого хранится в переменной.
 
     ```javascript
     const luke = {
