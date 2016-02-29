@@ -1057,7 +1057,7 @@
 
 ## Свойства
 
-  - [12.1](#12.1) <a name='12.1'></a> Use dot notation when accessing properties. eslint: [`dot-notation`](http://eslint.org/docs/rules/dot-notation.html) jscs: [`requireDotNotation`](http://jscs.info/rule/requireDotNotation)
+  - [12.1](#12.1) <a name='12.1'></a> Используйте точечную нотацию для доступа к свойствам и методам. eslint: [`dot-notation`](http://eslint.org/docs/rules/dot-notation.html) jscs: [`requireDotNotation`](http://jscs.info/rule/requireDotNotation)
 
     ```javascript
     const luke = {
@@ -1065,10 +1065,10 @@
       age: 28,
     };
 
-    // bad
+    // плохо
     const isJedi = luke['jedi'];
 
-    // good
+    // хорошо
     const isJedi = luke.jedi;
     ```
 
