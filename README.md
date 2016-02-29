@@ -77,44 +77,44 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## References
+## Ссылки
 
-  - [2.1](#2.1) <a name='2.1'></a> Use `const` for all of your references; avoid using `var`. eslint: [`prefer-const`](http://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign.html)
+  - [2.1](#2.1) <a name='2.1'></a> Используйте `const` для всех ссылок; исключайте использование `var`. eslint: [`prefer-const`](http://eslint.org/docs/rules/prefer-const.html), [`no-const-assign`](http://eslint.org/docs/rules/no-const-assign.html)
 
-    > Why? This ensures that you can't reassign your references, which can lead to bugs and difficult to comprehend code.
+    > Почему? Это гарантирует, что вы не сможете переназначить ваши ссылки, которые могут привести к багам и усложнению пониманию кода.
 
     ```javascript
-    // bad
+    // плохо
     var a = 1;
     var b = 2;
 
-    // good
+    // хорошо
     const a = 1;
     const b = 2;
     ```
 
-  - [2.2](#2.2) <a name='2.2'></a> If you must reassign references, use `let` instead of `var`. eslint: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
+  - [2.2](#2.2) <a name='2.2'></a> Если вам нужно переназначать ссылки, используйте `let` вместо `var`. eslint: [`no-var`](http://eslint.org/docs/rules/no-var.html) jscs: [`disallowVar`](http://jscs.info/rule/disallowVar)
 
-    > Why? `let` is block-scoped rather than function-scoped like `var`.
+    > Почему? Область видимости `let` - блок, а `var` - функция.
 
     ```javascript
-    // bad
+    // плохо
     var count = 1;
     if (true) {
       count += 1;
     }
 
-    // good, use the let.
+    // хорошо, используйте let
     let count = 1;
     if (true) {
       count += 1;
     }
     ```
 
-  - [2.3](#2.3) <a name='2.3'></a> Note that both `let` and `const` are block-scoped.
+  - [2.3](#2.3) <a name='2.3'></a> Помните, что область видимости `let` и `const` - блок.
 
     ```javascript
-    // const and let only exist in the blocks they are defined in.
+    // const и let существуют только в блоках, в которых они объявлены
     {
       let a = 1;
       const b = 1;
@@ -123,7 +123,7 @@
     console.log(b); // ReferenceError
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆](#table-of-contents)**
 
 ## Objects
 
