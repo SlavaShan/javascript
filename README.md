@@ -8,7 +8,7 @@
   1. [Types](#types)
   1. [References](#references)
   1. [Objects](#objects)
-  1. [Arrays](#arrays)
+  1. [Массивы](#Массивы)
   1. [Destructuring](#destructuring)
   1. [Strings](#strings)
   1. [Functions](#functions)
@@ -291,7 +291,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## Arrays
+## Массивы
 
   - [4.1](#4.1) <a name='4.1'></a> Use the literal syntax for array creation. eslint: [`no-array-constructor`](http://eslint.org/docs/rules/no-array-constructor.html)
 
