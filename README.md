@@ -293,13 +293,13 @@
 
 ## Массивы
 
-  - [4.1](#4.1) <a name='4.1'></a> Use the literal syntax for array creation. eslint: [`no-array-constructor`](http://eslint.org/docs/rules/no-array-constructor.html)
+  - [4.1](#4.1) <a name='4.1'></a> Используйте квадратные скобки для создания массива. eslint: [`no-array-constructor`](http://eslint.org/docs/rules/no-array-constructor.html)
 
     ```javascript
-    // bad
+    // плохо
     const items = new Array();
 
-    // good
+    // хорошо
     const items = [];
     ```
 
@@ -308,10 +308,10 @@
     ```javascript
     const someStack = [];
 
-    // bad
+    // плохо
     someStack[someStack.length] = 'abracadabra';
 
-    // good
+    // хорошо
     someStack.push('abracadabra');
     ```
 
@@ -319,7 +319,7 @@
   - [4.3](#4.3) <a name='4.3'></a> Use array spreads `...` to copy arrays.
 
     ```javascript
-    // bad
+    // плохо
     const len = items.length;
     const itemsCopy = [];
     let i;
@@ -328,7 +328,7 @@
       itemsCopy[i] = items[i];
     }
 
-    // good
+    // хорошо
     const itemsCopy = [...items];
     ```
   - [4.4](#4.4) <a name='4.4'></a> To convert an array-like object to an array, use Array#from.
@@ -341,23 +341,23 @@
   - [4.5](#4.5) <a name='4.5'></a> Use return statements in array method callbacks. It's ok to omit the return if the function body consists of a single statement following [8.2](#8.2). eslint: [`array-callback-return`](http://eslint.org/docs/rules/array-callback-return)
 
     ```javascript
-    // good
+    // хорошо
     [1, 2, 3].map((x) => {
       const y = x + 1;
       return x * y;
     });
 
-    // good
+    // хорошо
     [1, 2, 3].map(x => x + 1);
 
-    // bad
+    // плохо
     const flat = {};
     [[0, 1], [2, 3], [4, 5]].reduce((memo, item, index) => {
       const flatten = memo.concat(item);
       flat[index] = memo.concat(item);
     });
 
-    // good
+    // хорошо
     const flat = {};
     [[0, 1], [2, 3], [4, 5]].reduce((memo, item, index) => {
       const flatten = memo.concat(item);
@@ -365,7 +365,7 @@
       return flatten;
     });
 
-    // bad
+    // плохо
     inbox.filter((msg) => {
       const { subject, author } = msg;
       if (subject === 'Mockingbird') {
@@ -375,7 +375,7 @@
       }
     });
 
-    // good
+    // хорошо
     inbox.filter((msg) => {
       const { subject, author } = msg;
       if (subject === 'Mockingbird') {
