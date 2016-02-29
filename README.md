@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-  1. [Types](#types)
+  1. [Типы](#Типы)
   1. [References](#references)
   1. [Objects](#objects)
   1. [Arrays](#arrays)
@@ -42,7 +42,7 @@
   1. [Contributors](#contributors)
   1. [License](#license)
 
-## Types
+## Типы
 
   - [1.1](#1.1) <a name='1.1'></a> **Простые типы**: Когда вы взаимодействуете с простым типом, вы взаимодействуете непосредственно с его значением в памяти.
 
