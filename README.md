@@ -1043,7 +1043,7 @@
     numbers.forEach(num => sum += num);
     sum === 15;
 
-    // лучше (use the functional force)
+    // лучше (используйте силу функций)
     const sum = numbers.reduce((total, num) => total + num, 0);
     sum === 15;
     ```
