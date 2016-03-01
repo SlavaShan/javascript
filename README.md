@@ -17,7 +17,7 @@
   1. [Modules](#modules)
   1. [Iterators and Generators](#iterators-and-generators)
   1. [Свойства](#Свойства)
-  1. [Переменные](#variables)
+  1. [Переменные](#Переменные)
   1. [Hoisting](#hoisting)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
   1. [Блоки](#Блоки)
