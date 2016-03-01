@@ -15,7 +15,7 @@
   1. [Arrow Functions](#arrow-functions)
   1. [Constructors](#constructors)
   1. [Modules](#modules)
-  1. [Iterators and Generators](#iterators-and-generators)
+  1. [Итераторы и генераторы](#iterators-and-generators)
   1. [Properties](#properties)
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
@@ -1021,16 +1021,16 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## Iterators and Generators
+## Итераторы и генераторы
 
-  - [11.1](#11.1) <a name='11.1'></a> Don't use iterators. Prefer JavaScript's higher-order functions like `map()` and `reduce()` instead of loops like `for-of`. eslint: [`no-iterator`](http://eslint.org/docs/rules/no-iterator.html)
+  - [11.1](#11.1) <a name='11.1'></a> Не используйте итераторы. Don't use iterators. Отдайте предпочтение таким высокоуровневым функциям JavaScript, как `map()` и `reduce()` вместо циклов как `for-of`. eslint: [`no-iterator`](http://eslint.org/docs/rules/no-iterator.html)
 
-    > Why? This enforces our immutable rule. Dealing with pure functions that return values is easier to reason about than side effects.
+    > Почему? Это обеспечивает соблюдение наших неизменных правил. Иметь дело с чистыми функциями, возвращающие значения, проще для рассуждения, чем с побочными эффектами.
 
     ```javascript
     const numbers = [1, 2, 3, 4, 5];
 
-    // bad
+    // плохо
     let sum = 0;
     for (let num of numbers) {
       sum += num;
@@ -1038,21 +1038,21 @@
 
     sum === 15;
 
-    // good
+    // хорошо
     let sum = 0;
     numbers.forEach(num => sum += num);
     sum === 15;
 
-    // best (use the functional force)
+    // лучше (use the functional force)
     const sum = numbers.reduce((total, num) => total + num, 0);
     sum === 15;
     ```
 
-  - [11.2](#11.2) <a name='11.2'></a> Don't use generators for now.
+  - [11.2](#11.2) <a name='11.2'></a> Не используйте генераторы сегодня.
 
-    > Why? They don't transpile well to ES5.
+    > Почему? Они плохо транспайлятся в ES5.
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆](#table-of-contents)**
 
 
 ## Properties
