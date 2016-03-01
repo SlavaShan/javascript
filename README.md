@@ -20,7 +20,7 @@
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
-  1. [Blocks](#blocks)
+  1. [Блоки](#Блоки)
   1. [Comments](#comments)
   1. [Whitespace](#whitespace)
   1. [Commas](#commas)
@@ -1418,37 +1418,36 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Blocks
+## Блоки
 
-  - [16.1](#16.1) <a name='16.1'></a> Use braces with all multi-line blocks.
+  - [16.1](#16.1) <a name='16.1'></a> Используйте фигурные скобки во всех многострочных блоках.
 
     ```javascript
-    // bad
+    // плохо
     if (test)
       return false;
 
-    // good
+    // хорошо
     if (test) return false;
 
-    // good
+    // хорошо
     if (test) {
       return false;
     }
 
-    // bad
+    // плохо
     function foo() { return false; }
 
-    // good
+    // хорошо
     function bar() {
       return false;
     }
     ```
 
-  - [16.2](#16.2) <a name='16.2'></a> If you're using multi-line blocks with `if` and `else`, put `else` on the same line as your
-    `if` block's closing brace. eslint: [`brace-style`](http://eslint.org/docs/rules/brace-style.html) jscs:  [`disallowNewlineBeforeBlockStatements`](http://jscs.info/rule/disallowNewlineBeforeBlockStatements)
+  - [16.2](#16.2) <a name='16.2'></a> Если вы используете многострочные блоки с `if` и `else`, помещайте `else` на ту же строку, где закрывается фигурная скобка вашего `if`. eslint: [`brace-style`](http://eslint.org/docs/rules/brace-style.html) jscs:  [`disallowNewlineBeforeBlockStatements`](http://jscs.info/rule/disallowNewlineBeforeBlockStatements)
 
     ```javascript
-    // bad
+    // плохо
     if (test) {
       thing1();
       thing2();
@@ -1457,7 +1456,7 @@
       thing3();
     }
 
-    // good
+    // хорошо
     if (test) {
       thing1();
       thing2();
@@ -1467,7 +1466,7 @@
     ```
 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆](#table-of-contents)**
 
 
 ## Comments
