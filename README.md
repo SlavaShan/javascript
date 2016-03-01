@@ -1,6 +1,6 @@
 # Airbnb JavaScript Style Guide() {
 
-*A mostly reasonable approach to JavaScript*
+*Наиболее разумный подход к JavaScript*
 
 
 ## Table of Contents
