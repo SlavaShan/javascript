@@ -17,7 +17,7 @@
   1. [Modules](#modules)
   1. [Iterators and Generators](#iterators-and-generators)
   1. [Свойства](#Свойства)
-  1. [Variables](#variables)
+  1. [Переменные](#variables)
   1. [Hoisting](#hoisting)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
   1. [Блоки](#Блоки)
@@ -1090,58 +1090,58 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Variables
+## Переменные
 
-  - [13.1](#13.1) <a name='13.1'></a> Always use `const` to declare variables. Not doing so will result in global variables. We want to avoid polluting the global namespace. Captain Planet warned us of that.
+  - [13.1](#13.1) <a name='13.1'></a> Всегда используйте `const` для объявления переменной. Несоблюдение этого, приводит к глобальным переменным. Мы хотим избегать загрязнения глобальной области видимости. Капитан Планета предупредил нас об этом.
 
     ```javascript
-    // bad
+    // плохо
     superPower = new SuperPower();
 
-    // good
+    // хорошо
     const superPower = new SuperPower();
     ```
 
-  - [13.2](#13.2) <a name='13.2'></a> Use one `const` declaration per variable. eslint: [`one-var`](http://eslint.org/docs/rules/one-var.html) jscs: [`disallowMultipleVarDecl`](http://jscs.info/rule/disallowMultipleVarDecl)
+  - [13.2](#13.2) <a name='13.2'></a> Используйте один `const` для объявления переменной. eslint: [`one-var`](http://eslint.org/docs/rules/one-var.html) jscs: [`disallowMultipleVarDecl`](http://jscs.info/rule/disallowMultipleVarDecl)
 
-    > Why? It's easier to add new variable declarations this way, and you never have to worry about swapping out a `;` for a `,` or introducing punctuation-only diffs.
+    > Почему? Таким способом проще добавить объявление новой переменной, и никогда не беспокоиться о замене `;` на `,` или внесении только пунктуационных различий.
 
     ```javascript
-    // bad
+    // плохо
     const items = getItems(),
         goSportsTeam = true,
         dragonball = 'z';
 
-    // bad
-    // (compare to above, and try to spot the mistake)
+    // плохо
+    // (сравните с верхним и попытайтесь определить ошибку)
     const items = getItems(),
         goSportsTeam = true;
         dragonball = 'z';
 
-    // good
+    // хорошо
     const items = getItems();
     const goSportsTeam = true;
     const dragonball = 'z';
     ```
 
-  - [13.3](#13.3) <a name='13.3'></a> Group all your `const`s and then group all your `let`s.
+  - [13.3](#13.3) <a name='13.3'></a> Группируйте все ваши `const` и потом группируйте все ваши `let`.
 
-    > Why? This is helpful when later on you might need to assign a variable depending on one of the previous assigned variables.
+    > Почему? Это полезно, когда позднее вам понадобится присвоить переменную в зависимости от одной из предыдущих присвоенных переменных.
 
     ```javascript
-    // bad
+    // плохо
     let i, len, dragonball,
         items = getItems(),
         goSportsTeam = true;
 
-    // bad
+    // плохо
     let i;
     const items = getItems();
     let dragonball;
     const goSportsTeam = true;
     let len;
 
-    // good
+    // хорошо
     const goSportsTeam = true;
     const items = getItems();
     let dragonball;
@@ -1149,12 +1149,12 @@
     let length;
     ```
 
-  - [13.4](#13.4) <a name='13.4'></a> Assign variables where you need them, but place them in a reasonable place.
+  - [13.4](#13.4) <a name='13.4'></a> Присваивайте переменные там, где они нужны, но размещайте их в разумном месте.
 
-    > Why? `let` and `const` are block scoped and not function scoped.
+    > Почему? Область видимости `let` и `const` - блок, а не функция.
 
     ```javascript
-    // bad - unnecessary function call
+    // плохо - ненужный вызов функции
     function checkName(hasName) {
       const name = getName();
 
@@ -1170,7 +1170,7 @@
       return name;
     }
 
-    // good
+    // хорошо
     function checkName(hasName) {
       if (hasName === 'test') {
         return false;
@@ -1187,7 +1187,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆](#table-of-contents)**
 
 
 ## Hoisting
