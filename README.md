@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-  1. [Types](#types)
+  1. [Типы](#Типы)
   1. [References](#references)
   1. [Objects](#objects)
   1. [Arrays](#arrays)
@@ -42,9 +42,9 @@
   1. [Contributors](#contributors)
   1. [License](#license)
 
-## Types
+## Типы
 
-  - [1.1](#1.1) <a name='1.1'></a> **Primitives**: When you access a primitive type you work directly on its value.
+  - [1.1](#1.1) <a name='1.1'></a> **Простые типы**: Когда вы взаимодействуете с простым типом, вы взаимодействуете непосредственно с его значением в памяти.
 
     + `string`
     + `number`
@@ -60,7 +60,7 @@
 
     console.log(foo, bar); // => 1, 9
     ```
-  - [1.2](#1.2) <a name='1.2'></a> **Complex**: When you access a complex type you work on a reference to its value.
+  - [1.2](#1.2) <a name='1.2'></a> **Сложные типы**: Когда вы взаимодействуете со сложным типом, вы взаимодействуете с ссылкой на его значение в памяти.
 
     + `object`
     + `array`
