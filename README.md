@@ -6,7 +6,7 @@
 ## Table of Contents
 
   1. [Типы](#Типы)
-  1. [Ссылки](#references)
+  1. [Ссылки](#Ссылки)
   1. [Objects](#objects)
   1. [Arrays](#arrays)
   1. [Destructuring](#destructuring)
