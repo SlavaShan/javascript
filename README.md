@@ -11,7 +11,7 @@
   1. [Arrays](#arrays)
   1. [Destructuring](#destructuring)
   1. [Strings](#strings)
-  1. [Functions](#functions)
+  1. [Функции](#Функции)
   1. [Arrow Functions](#arrow-functions)
   1. [Constructors](#constructors)
   1. [Modules](#modules)
@@ -517,7 +517,7 @@
 **[⬆ back to top](#table-of-contents)**
 
 
-## Functions
+## Функции
 
   - [7.1](#7.1) <a name='7.1'></a> Use function declarations instead of function expressions. jscs: [`requireFunctionDeclarations`](http://jscs.info/rule/requireFunctionDeclarations)
 
@@ -720,7 +720,7 @@
     }
     ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆](#table-of-contents)**
 
 ## Arrow Functions
 
