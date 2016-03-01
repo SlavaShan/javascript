@@ -20,7 +20,7 @@
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
-  1. [Блоки](#blocks)
+  1. [Блоки](#Блоки)
   1. [Comments](#comments)
   1. [Whitespace](#whitespace)
   1. [Commas](#commas)
