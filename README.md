@@ -9,7 +9,7 @@
   1. [References](#references)
   1. [Objects](#objects)
   1. [Arrays](#arrays)
-  1. [Destructuring](#destructuring)
+  1. [Деструктуризация](#destructuring)
   1. [Strings](#strings)
   1. [Functions](#functions)
   1. [Arrow Functions](#arrow-functions)
@@ -453,7 +453,7 @@
     ```
 
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆](#table-of-contents)**
 
 ## Strings
 
